@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>حجز موعد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Tajawal', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: white;
+      border-bottom: 2px solid #008aad;
+      padding: 15px;
+      text-align: center;
+    }
+    header img {
+      height: 50px;
+      margin-bottom: 5px;
+    }
+    .main-section {
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+    .main-section h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .form-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      max-width: 600px;
+      margin: auto;
+      text-align: right;
+    }
+    .form-box label {
+      font-weight: bold;
+    }
+    .btn-submit {
+      background-color: #008aad;
+      color: white;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 18px;
+      width: 100%;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.svg" alt="شعار سلامة">
+    <h1 style="font-size: 20px; margin: 5px 0;">مركز سلامة المركبات</h1>
+    <span style="font-size: 14px; color: #777;">Vehicles Safety Center</span>
+  </header>
+
+  <div class="main-section">
+    <h2>حجز موعد</h2>
+
+    <div class="form-box">
+      <form>
+        <div class="mb-3">
+          <label>الاسم الكامل</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label>رقم الجوال</label>
+          <input type="tel" class="form-control" placeholder="+966" required>
+        </div>
+        <div class="mb-3">
+          <label>رقم الهوية</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label>نوع التسجيل</label>
+          <select class="form-select">
+            <option>خصوصي</option>
+            <option>نقل عام</option>
+            <option>نقل خاص</option>
+            <option>مقطورة</option>
+            <option>دراجة نارية</option>
+            <option>مركبة أجرة</option>
+            <option>تصدير</option>
+            <option>دراجة نارية ترفيهية</option>
+            <option>هيئة دبلوماسية</option>
+            <option>حافلة خاصة</option>
+            <option>حافلة عامة</option>
+            <option>حافلة كبيرة</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label>نوع مركبة</label>
+          <select class="form-select">
+            <option>سيارة خاصة</option>
+            <option>نقل خفيف</option>
+            <option>نقل ثقيل</option>
+            <option>دراجة ثنائية العجل</option>
+            <option>حافلة متوسطة</option>
+            <option>مقطورة ثقيلة</option>
+            <option>سيارات التأجير</option>
+            <option>نصف مقطورة ثقيلة</option>
+            <option>مركبة أشغال عامة</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label>نوع خدمة الفحص</label>
+          <select class="form-select">
+            <option>خدمة الفحص الدوري</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label>اختيار المنطقة</label>
+          <select class="form-select">
+            <option>الرياض</option>
+            <option>مكة المكرمة</option>
+            <option>المدينة المنورة</option>
+            <option>القصيم</option>
+            <option>المنطقة الشرقية</option>
+            <option>عسير</option>
+            <option>تبوك</option>
+            <option>حائل</option>
+            <option>الحدود الشرقية</option>
+            <option>جازان</option>
+            <option>نجران</option>
+            <option>الباحة</option>
+            <option>الجوف</option>
+            <option>الاحساء</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label>موعد الفحص</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-submit">تقديم الطلب</button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
